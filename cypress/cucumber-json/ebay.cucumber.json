@@ -1,0 +1,67 @@
+[
+  {
+    "description": "As a user I want to find products on Ebay page",
+    "keyword": "Feature",
+    "name": "Ebay",
+    "line": 2,
+    "id": "ebay",
+    "tags": [
+      {
+        "name": "@ebay",
+        "line": 1
+      }
+    ],
+    "uri": "ebay.feature",
+    "elements": [
+      {
+        "id": "ebay;validate-the-ebay-search",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Validate the Ebay search",
+        "tags": [
+          {
+            "name": "@ebay",
+            "line": 1
+          },
+          {
+            "name": "@ebay_search",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "already on ebay page",
+            "result": {
+              "status": "passed",
+              "duration": 3824000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "product search is executed",
+            "result": {
+              "status": "passed",
+              "duration": 6221000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "a result page appears",
+            "result": {
+              "status": "passed",
+              "duration": 8509000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

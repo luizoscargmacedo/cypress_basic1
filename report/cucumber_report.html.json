@@ -1,0 +1,181 @@
+[
+  {
+    "description": "As a user I want to find products on Ebay page",
+    "keyword": "Feature",
+    "name": "Ebay",
+    "line": 2,
+    "id": "ebay",
+    "tags": [
+      {
+        "name": "@ebay",
+        "line": 1
+      }
+    ],
+    "uri": "ebay.feature",
+    "elements": [
+      {
+        "id": "ebay;validate-the-ebay-search",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Validate the Ebay search",
+        "tags": [
+          {
+            "name": "@ebay",
+            "line": 1
+          },
+          {
+            "name": "@ebay_search",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "already on ebay page",
+            "result": {
+              "status": "passed",
+              "duration": 3824000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "product search is executed",
+            "result": {
+              "status": "passed",
+              "duration": 6221000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "a result page appears",
+            "result": {
+              "status": "passed",
+              "duration": 8509000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "As a user I want to validate a Registration Confirmation Email",
+    "keyword": "Feature",
+    "name": "Email",
+    "line": 2,
+    "id": "email",
+    "tags": [
+      {
+        "name": "@email",
+        "line": 1
+      }
+    ],
+    "uri": "email.feature",
+    "elements": [
+      {
+        "id": "email;validate-the-mailbox-access",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Validate the Mailbox access",
+        "tags": [
+          {
+            "name": "@email",
+            "line": 1
+          },
+          {
+            "name": "@email_login",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "already on the email page",
+            "result": {
+              "status": "passed",
+              "duration": 13872000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Login is executed",
+            "result": {
+              "status": "passed",
+              "duration": 6850000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Mailbox screen is opened",
+            "result": {
+              "status": "failed",
+              "duration": 19233000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Caixa de Entrada' but never did.\n    at Object.mailBoxValidation (https://email.bol.uol.com.br/__cypress/tests?p=cypress/integration/email.feature:194:30)\n    at Context.eval (https://email.bol.uol.com.br/__cypress/tests?p=cypress/integration/email.feature:260:17)\n    at Context.resolveAndRunStepDefinition (https://email.bol.uol.com.br/__cypress/tests?p=cypress/integration/email.feature:26243:29)\n    at Context.eval (https://email.bol.uol.com.br/__cypress/tests?p=cypress/integration/email.feature:25615:35)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "email;email-message-validation",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Email message validation",
+        "tags": [
+          {
+            "name": "@email",
+            "line": 1
+          },
+          {
+            "name": "@email_validation",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "the Mailbox screen is opened",
+            "result": {
+              "status": "failed",
+              "duration": 19799000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Caixa de Entrada' but never did.\n    at Object.mailBoxValidation (https://email.bol.uol.com.br/__cypress/tests?p=cypress/integration/email.feature:194:30)\n    at Context.eval (https://email.bol.uol.com.br/__cypress/tests?p=cypress/integration/email.feature:264:17)\n    at Context.resolveAndRunStepDefinition (https://email.bol.uol.com.br/__cypress/tests?p=cypress/integration/email.feature:26243:29)\n    at Context.eval (https://email.bol.uol.com.br/__cypress/tests?p=cypress/integration/email.feature:25615:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "we confirmed if the email message arrived",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "this test is completed successfully",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

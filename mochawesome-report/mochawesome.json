@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-12T19:11:23.408Z",
+    "end": "2021-11-12T19:11:50.478Z",
+    "duration": 27070,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e78e2925-0804-4054-9978-3846df1cc411",
+      "title": "",
+      "fullFile": "cypress/integration/ebay.feature",
+      "file": "cypress/integration/ebay.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6aab15d3-4a87-49e9-a102-6f083cf7c2c0",
+          "title": "Ebay",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate the Ebay search",
+              "fullTitle": "Ebay Validate the Ebay search",
+              "timedOut": null,
+              "duration": 18440,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "fb63be41-4da5-4046-9038-855c364af1ed",
+              "parentUUID": "6aab15d3-4a87-49e9-a102-6f083cf7c2c0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fb63be41-4da5-4046-9038-855c364af1ed"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 18440,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "charts": true,
+        "pretty": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
